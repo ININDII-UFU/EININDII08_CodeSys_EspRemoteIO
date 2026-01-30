@@ -44,7 +44,104 @@ Ao final deste procedimento, o sistema estará:
 
 ---
 
-## 🧭 Passo a passo
+## 🧭 Instalando o Codesys 
+
+### 🔹 Passo 1 – Acessar o instalador do CODESYS
+![fig1](assets/inst/fig01.png)
+
+1. Acesse a pasta onde estão os arquivos de instalação
+2. Localize o arquivo **CODESYS 64 3.5.21.0.exe**
+3. **Clique duas vezes** sobre o instalador para iniciar
+
+💡 *Certifique-se de utilizar a versão correta (64 bits) compatível com seu sistema.*
+
+---
+
+### 🔹 Passo 2 – Iniciar o instalador
+![fig2](assets/inst/fig02.png)
+
+1. Aguarde o carregamento do **InstallShield Wizard**
+2. Clique em **Install** para prosseguir com a instalação
+
+---
+
+### 🔹 Passo 3 – Tela de boas-vindas do assistente
+![fig3](assets/inst/fig03.png)
+
+1. Na tela **Welcome to the InstallShield Wizard**
+2. Clique em **Next >** para continuar
+
+---
+
+### 🔹 Passo 4 – Aceitar o contrato de licença
+![fig4](assets/inst/fig04.png)
+
+1. Leia o **License Agreement**
+2. Selecione a opção **I accept the terms in the license agreement**
+3. Clique em **Next >**
+
+⚠️ *Sem aceitar os termos a instalação não prossegue.*
+
+---
+
+### 🔹 Passo 5 – Informações de versão (Release Information)
+![fig5](assets/inst/fig05.png)
+
+1. Opcionalmente, marque **I have read the information**
+2. Clique em **Next >**
+
+💡 *Esta tela apresenta informações sobre mudanças e correções da versão.*
+
+---
+
+### 🔹 Passo 6 – Definir pasta de instalação
+![fig6](assets/inst/fig06.png)
+
+1. Verifique o diretório de instalação padrão  
+   (ex.: `C:\Program Files\CODESYS 3.5.21.0`)
+2. Caso deseje, clique em **Change** para alterar
+3. Clique em **Next >** para continuar
+
+---
+
+### 🔹 Passo 7 – Selecionar o tipo de instalação
+![fig7](assets/inst/fig07.png)
+
+1. Selecione **Complete** para instalar todos os recursos
+2. Clique em **Next >**
+
+💡 *A instalação completa é recomendada para desenvolvimento PLC.*
+
+---
+
+### 🔹 Passo 8 – Confirmar início da instalação
+![fig8](assets/inst/fig08.png)
+
+1. Revise as configurações selecionadas
+2. Clique em **Install** para iniciar a instalação
+
+---
+
+### 🔹 Passo 9 – Aguardar a instalação dos componentes
+![fig9](assets/inst/fig09.png)
+
+1. Aguarde enquanto o assistente instala os componentes do CODESYS
+2. Não feche esta janela durante o processo
+
+⏳ *O tempo pode variar conforme o computador.*
+
+---
+
+### 🔹 Passo 10 – Concluir a instalação
+![fig10](assets/inst/fig10.png)
+
+1. Verifique a mensagem **InstallShield Wizard Completed**
+2. Opcionalmente, marque **Show the Windows Installer**
+3. Clique em **Finish** para encerrar
+
+✅ *O CODESYS foi instalado com sucesso no sistema.*
+
+##  Configurando o Codesys para funcionar com o EspRemoteIO 
 
 ### 🔹 Passo 1 – Criar um novo projeto no CODESYS
 ![fig1](assets/imgs/fig1.png)
