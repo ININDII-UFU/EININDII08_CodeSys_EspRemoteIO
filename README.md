@@ -1,16 +1,17 @@
 
 # Instalando o CODESYS V3.5 SP21 e comunicando ele com a ESP32 em Modbus.
 
-## 📑 Índice
+<details open>
+  <summary><strong>📑 Índice </strong></summary>
 
-- [🎯 Objetivo](#-objetivo)
-- [👥 Público-alvo](#-público-alvo)
-- [🧰 Pré-requisitos](#-pré-requisitos)
+- [🎯 Objetivo](#objetivo)
+- [👥 Público-alvo](#público-alvo)
+- [🧰 Pré-requisitos](#pré-requisitos)
   - [Software](#software)
   - [Hardware](#hardware)
-- [📋 Checklist antes de iniciar](#-checklist-antes-de-iniciar)
+- [📋 Checklist antes de iniciar](#checklist-antes-de-iniciar)
 
-- [🧭 Instalando o Codesys](#-instalando-o-codesys)
+- [🧭 Instalando o Codesys](#instalando-o-codesys)
   - [Passo 1 – Acessar o instalador do CODESYS](#-passo-1--acessar-o-instalador-do-codesys)
   - [Passo 2 – Iniciar o instalador](#-passo-2--iniciar-o-instalador)
   - [Passo 3 – Tela de boas-vindas do assistente](#-passo-3--tela-de-boas-vindas-do-assistente)
@@ -22,7 +23,7 @@
   - [Passo 9 – Aguardar a instalação dos componentes](#-passo-9--aguardar-a-instalação-dos-componentes)
   - [Passo 10 – Concluir a instalação](#-passo-10--concluir-a-instalação)
 
-- [⚙️ Configurando o Codesys para funcionar com o EspRemoteIO](#--configurando-o-codesys-para-funcionar-com-o-espremoteio)
+- [⚙️ Configurando o Codesys para funcionar com o EspRemoteIO](#configurando-o-codesys)
   - [Passo 1 – Criar um novo projeto no CODESYS](#-passo-1--criar-um-novo-projeto-no-codesys)
   - [Passo 2 – Selecionando o dispositivo PLC](#-passo-2--selecionando-o-dispositivo-plc)
   - [Passo 3 – Escolhendo o PLC utilizado](#-passo-3--escolhendo-o-plc-utilizado)
@@ -56,13 +57,16 @@
   - [Passo 31 – Selecionar a variável da bobina](#-passo-31--selecionar-a-variável-da-bobina)
   - [Passo 32 – Resultado final no Ladder](#-passo-32--resultado-final-no-ladder)
 
-- [✅ Resultado esperado](#-resultado-esperado)
-- [⚠️ Observações importantes](#-observações-importantes)
-- [📚 Referências](#-referências)
+- [✅ Resultado esperado](#resultado-esperado)
+- [⚠️ Observações importantes](#observações-importantes)
+- [📚 Referências](#referências)
+
+</details>
 
 ---
-
-## 🎯 Objetivo
+<a id="objetivo"></a>
+<details>
+  <summary> <strong> 🎯 Objetivo </strong></summary>
 
 Este tutorial tem como objetivo orientar, de forma **didática e passo a passo**, a criação de um **projeto Modbus no CODESYS V3.5 SP21**, utilizando a ferramenta **ESP_Remote_IO**, de modo que uma **ESP32 funcione como uma Remota Modbus**, permitindo comunicação completa com o sistema de controle.
 
@@ -71,17 +75,25 @@ Ao final deste procedimento, o sistema estará:
 - ✅ Comunicando via Modbus
 - ✅ Reconhecendo a ESP32 como uma remota de I/O
 
+</details>
+
 ---
 
-## 👥 Público-alvo
+<a id="público-alvo"></a>
+<details>
+  <summary><strong> 👥 Público-alvo </strong></summary>
 
 - Estudantes de **Engenharia / Automação Industrial**
 - Alunos da disciplina **Instrumentação Industrial II – UFU**
 - Profissionais iniciantes em **CODESYS e comunicação Modbus**
 
+</details>
+
 ---
 
-## 🧰 Pré-requisitos
+<a id="pré-requisitos"></a>
+<details>
+  <summary><strong> 🧰 Pré-requisitos </strong></summary>
 
 ### Software
 - ✅ Windows 11
@@ -94,18 +106,25 @@ Ao final deste procedimento, o sistema estará:
 - ✅ ESP32 configurada conforme o repositório
 - ⚠️ Rede configurada corretamente (IP, firewall, cabo)
 
+</details>
+
 ---
 
-## 📋 Checklist antes de iniciar
+<a id="checklist-antes-de-iniciar"></a>
+<details>
+  <summary><strong> 📋 Checklist antes de iniciar </strong></summary>
 
 - [ ] CODESYS instalado corretamente  
 - [ ] ESP32 energizada  
 - [ ] Firmware da ESP_Remote_IO carregado  
 - [ ] Comunicação de rede funcional  
 
----
+</details>
 
-## 🧭 Instalando o Codesys 
+---
+<a id="instalando-o-codesys"></a>
+<details open>
+  <summary><strong> 🧭 Instalando o Codesys  </strong></summary>
 
 ### 🔹 Passo 1 – Acessar o instalador do CODESYS
 ![fig1](assets/inst/fig01.png)
@@ -202,7 +221,11 @@ Ao final deste procedimento, o sistema estará:
 
 ✅ *O CODESYS foi instalado com sucesso no sistema.*
 
-## ⚙️ Configurando o Codesys para funcionar com o EspRemoteIO 
+</details>
+
+<a id="configurando-o-codesys"></a>
+<details open>
+  <summary><strong> ⚙️ Configurando o Codesys para funcionar com o EspRemoteIO  </strong></summary>
 
 ### 🔹 Passo 1 – Criar um novo projeto no CODESYS
 ![fig1](assets/imgs/fig1.png)
@@ -497,39 +520,41 @@ Ao final deste procedimento, o sistema estará:
 
 💡 *Nesta etapa o plc é inicido. Vá ate a ESP clique no botão RTN1 e a bobina RELE será acionada.*
 
----
-
-Nestes passos são realizados:
-
-1. Criação dos canais Modbus
-2. Associação de registradores
-3. Definição de tipos de dados
-4. Ligação das variáveis ao programa PLC
-5. Verificação online da comunicação
-
-💡 *Siga rigorosamente a numeração indicada em cada imagem.*
+</details>
 
 ---
 
-## ✅ Resultado esperado
+<a id="resultado-esperado"></a>
+<details>
+  <summary><strong>✅ Resultado esperado</strong></summary>
 
 Ao final:
 - ESP32 operando como **Remota Modbus**
 - Comunicação estável com o CODESYS
 - Leituras e escritas funcionais
 
+</details>
+
 ---
 
-## ⚠️ Observações importantes
+<a id="observações-importantes"></a>
+<details>
+  <summary><strong>⚠️ Observações importantes </strong></summary>
 
 - Sempre salvar o projeto após grandes alterações
 - Conferir IP antes de colocar em RUN
 - Em caso de erro, verificar firewall do Windows
 
+</details>
+
 ---
 
-## 📚 Referências
+<a id="referências"></a>
+<details>
+  <summary><strong>📚 Referências </strong></summary>
 
 - Repositório ESP_Remote_IO:
   https://github.com/ININDII-UFU/EININDII08_EspRemoteIO
 - Documentação CODESYS
+
+</details>
