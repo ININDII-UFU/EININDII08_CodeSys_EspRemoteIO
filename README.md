@@ -1,5 +1,10 @@
 
-# Instalando o CODESYS V3.5 SP21 e comunicando ele com a ESP32 em Modbus.
+# 
+# 📘 EININIDII - Instalação/Configuração CODESYS V3.5 SP21 para comunicar com a ESP32 em Modbus.
+> **Professor**: Josué Morais  
+> **Disciplina**: Instrumentação Industrial II  
+> **Curso**: Engenharia de Controle e Automação  
+> **Instituição**: Universidade Federal de Uberlândia — FEELT  
 
 <details open>
   <summary><strong>📑 Índice </strong></summary>
@@ -79,18 +84,6 @@ Ao final deste procedimento, o sistema estará:
 
 ---
 
-<a id="público-alvo"></a>
-<details>
-  <summary><strong> 👥 Público-alvo </strong></summary>
-
-- Estudantes de **Engenharia / Automação Industrial**
-- Alunos da disciplina **Instrumentação Industrial II – UFU**
-- Profissionais iniciantes em **CODESYS e comunicação Modbus**
-
-</details>
-
----
-
 <a id="pré-requisitos"></a>
 <details>
   <summary><strong> 🧰 Pré-requisitos </strong></summary>
@@ -105,19 +98,6 @@ Ao final deste procedimento, o sistema estará:
 ### Hardware
 - ✅ ESP32 configurada conforme o repositório
 - ⚠️ Rede configurada corretamente (IP, firewall, cabo)
-
-</details>
-
----
-
-<a id="checklist-antes-de-iniciar"></a>
-<details>
-  <summary><strong> 📋 Checklist antes de iniciar </strong></summary>
-
-- [ ] CODESYS instalado corretamente  
-- [ ] ESP32 energizada  
-- [ ] Firmware da ESP_Remote_IO carregado  
-- [ ] Comunicação de rede funcional  
 
 </details>
 
