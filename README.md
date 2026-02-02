@@ -14,7 +14,7 @@
   - [Software](#software)
   - [Hardware](#hardware)
 
-- [📡 Preparando o projeto da ESP32 (ESP_Remote_IO)](#preparando-esp32)
+- [📡 Preparando a ESP32 (ESP_Remote_IO)](#preparando-esp32)
   - [Passo 1 – Criar um fork do repositório no GitHub](#passo-1--criar-um-fork-do-repositório-no-github)
   - [Passo 2 – Confirmar a criação do fork](#passo-2--confirmar-a-criação-do-fork)
   - [Passo 3 – Abrir o Visual Studio Code](#passo-3--abrir-o-visual-studio-code)
@@ -116,13 +116,13 @@ Ao final deste procedimento, o sistema estará:
 
 <a id="preparando-esp32"></a>
 <details>
-  <summary><strong> 📡 Preparando o projeto da ESP32 (ESP_Remote_IO) </strong></summary>
+  <summary><strong> 📡 Preparando a ESP32 (ESP_Remote_IO) </strong></summary>
 
 ### 🔹 Passo 1 – Criar um fork do repositório no GitHub
 ![fig1](assets/esp/fig01.png)
 
 1. Acesse o repositório **EININDII08_Codesys_EspRemoteIO**
-2. Clique no botão **Fork** no canto superior direito
+2. Clique no botão **Fork** (ou **bifurcação** em pt-BR) no canto superior direito
 3. Aguarde a criação da cópia do repositório em sua conta
 
 💡 *O fork permite editar e clonar o projeto sem alterar o repositório original.*
@@ -152,8 +152,9 @@ Ao final deste procedimento, o sistema estará:
 ### 🔹 Passo 4 – Abrir a tela inicial do VS Code
 ![fig4](assets/esp/fig04.png)
 
-1. Na tela inicial do VS Code, clique em **Clone Repository**
-2. Certifique-se de que nenhuma pasta está aberta
+1. Na tela inicial do VS Code, no barra lateral esquerda clique no botão referente a **Controle de Código ***
+2. Na seguencia clique no botão **Clone Repository**
+3. Certifique-se de que nenhuma pasta está aberta
 
 ---
 
@@ -191,6 +192,7 @@ Ao final deste procedimento, o sistema estará:
    - `lib`
    - `platformio.ini`
 2. Abra o arquivo **platformio.ini** para conferência
+3. Certifique-se de que o valor da tag **kitid** seja o da **Esp32** que vc esta usando.
 
 💡 *Este arquivo define a placa ESP32, rede e bibliotecas.*
 
