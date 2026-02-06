@@ -73,6 +73,10 @@
   - [Passo 10 – Compilação e gravação concluídas](#passo-10--compilação-e-gravação-concluídas)
 
 - [📡 Vinculando a ESP32 ao Codesys](#vinculando-esp32)
+  - [Passo 1 – Anote o IP da ESP32](#passo-1--anote-ip-esp32)
+  - [Passo 2 – Acesse o Modbus_TCP_Server](#passo-2--acesse-o-modbus-tcp-server)
+  - [Passo 3 – Aponte no Codesys o IP da ESP32](#passo-3--aponte-no-codesys-o-ip-da-esp32)
+  - [Passo 4 – Login e Start no PLC](#passo-1--login-e-start-no-plc)
 
 - [✅ Resultado esperado](#resultado-esperado)
 - [⚠️ Observações importantes](#observações-importantes)
@@ -639,6 +643,34 @@ Ao final deste procedimento, o sistema estará:
 <a id="vinculando-esp32"></a>
 <details>
   <summary><strong> 📡 Vinculando a ESP32 ao Codesys </strong></summary>
+
+### 🔹 Passo 1 – Anote o IP da ESP32
+![fig33](assets/imgs/fig33.png)
+
+1. Anote o ip da ESP32 que é mostrado no display.
+
+---
+
+### 🔹 Passo 2 – Acesse o Modbus TCP Server
+![fig34](assets/imgs/fig34.png)
+
+1. Dê um duplo clique em **Modbus_TCP_Server**
+
+---
+
+### 🔹 Passo 3 – Aponte no Codesys o IP da ESP32
+![fig35](assets/imgs/fig35.png)
+
+1. Com um clique simples selecione o item **geral**.
+2. Em **Server IP address** digite o ip da ESP32
+
+---
+
+### 🔹 Passo 4 – Login e Start no PLC
+![fig36](assets/imgs/fig36.png)
+
+1. Faça **Login** no plc e dê **Start** no mesmo.
+
 </details>
 
 ---
